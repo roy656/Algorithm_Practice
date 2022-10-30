@@ -20,7 +20,7 @@ package algorithm.programmers;
         2022년 기준 23살이므로 2000년생입니다.
 */
 
-class Solution {
+class 나이출력 {
     public int solution(int age) {
         int answer = 0;
         int thisYear = 2022;
