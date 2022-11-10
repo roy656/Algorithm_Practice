@@ -25,7 +25,7 @@ package algorithm.programmers;
 
  */
 
-public class 피자나눠먹기 {
+public class 피자나눠먹기_1 {
 
     public int solution(int n) {
         int answer = 0;
