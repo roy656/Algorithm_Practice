@@ -1,4 +1,4 @@
-package algorithm.programmers;
+package algorithm.programmers.level_0;
 
 /*나이 출력
         문제 설명

@@ -1,4 +1,4 @@
-package algorithm.programmers;
+package algorithm.programmers.level_0;
 
 /*
 머쓱이보다 키 큰 사람

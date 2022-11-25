@@ -1,4 +1,4 @@
-package algorithm.programmers;
+package algorithm.programmers.level_0;
 
 /*
     짝수 홀수 개수

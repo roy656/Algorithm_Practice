@@ -1,4 +1,4 @@
-package algorithm.programmers;
+package algorithm.programmers.level_0;
 
 /*
     배열 뒤집기
