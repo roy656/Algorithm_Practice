@@ -45,3 +45,7 @@ public class 하샤드수 {
         return (num % sum == 0) ? true : false;
     }
 }
+
+/*
+혹은 int -> String 배열 -> int 로 형변환을 거쳐 풀이 해도 됨.
+ */
