@@ -39,7 +39,7 @@ public class 나열된수에서최솟값과최댓값구하기 {
                 maxHere = i+1;
             }
         }
-        System.out.println("가장 작은 값은 " + minHere + " 번째의 " + min + " 이고, 가장 큰 값은 " + maxHere + " 번째의 " + max + " 입니다.");
-
+        System.out.println("가장 작은 값은 " + minHere + " 번째의 " + min + " 입니다.");
+        System.out.println("가장 큰 값은 " + maxHere + " 번째의 " + max + " 입니다.");
     }
 }
