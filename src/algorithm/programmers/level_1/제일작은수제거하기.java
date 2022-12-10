@@ -20,7 +20,7 @@ import java.util.Arrays;
 
  */
 
-
+// 아직 미해결
 public class 제일작은수제거하기 {
 
     public static void main(String[] args) {
