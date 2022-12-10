@@ -36,7 +36,7 @@ public class HeapSort {
         temp = heapArr[SIZE];
         SIZE -= 1;
         parent =1; child = 2;
-//11
+
         while(child <= SIZE){
             //if((child < HEAP_SIZE) && (heapArr[child] < heapArr[child+1])){ //max heap
             if((child < SIZE) && (heapArr[child] > heapArr[child+1])){ //min heap
