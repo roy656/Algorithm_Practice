@@ -35,11 +35,11 @@ public class 정렬된수에서하나의수의위치찾기 {
         int right = numbers.length - 1;
         int mid = (left + right) / 2;
         int temp = numbers[mid];
-        boolean find = false;
+        boolean tempd = false;
 
         while(left <= right) {
             if(target == temp) {
-                find = true;
+                tempd = true;
                 break;
             }
             else if(target < temp) {
@@ -52,7 +52,7 @@ public class 정렬된수에서하나의수의위치찾기 {
             temp = numbers[mid];
         }
 
-        if(find == true) {
+        if(tempd == true) {
             mid++;
 
             System.out.println("찾는 수는 " + mid + " 번째에 있습니다.");
