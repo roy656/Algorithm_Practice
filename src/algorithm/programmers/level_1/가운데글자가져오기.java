@@ -40,4 +40,4 @@ public class 가운데글자가져오기 {
 
 // 1등 풀이 ;;
 
-// return word.substring((word.length()-1) / 2, word.length()/2 + 1);
+// return words.substring((words.length()-1) / 2, words.length()/2 + 1);
