@@ -1,58 +1,54 @@
 package algorithm.programmers.level_1;
 
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.*;
 
 public class Altest {
 
 
     public static void main(String[] args) {
 
+        int n = 5;
 
+        System.out.println();
+        System.out.println("===============직각삼각형");
+        System.out.println();
 
-        String ss = "AWAWSSS";
-
-        String answer = "";
-        String str = "";
-
-        while (ss.length() > 2) {
-            str = ss.replace("AWS", "");
-            ss = str;
-
-            if(ss.length() == 0) {
-                System.out.println("-1");
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
             }
-        }
-        System.out.println(ss);
-
-
-
-
-
-
-        int num = 909;
-
-
-        String s = String.valueOf(num);
-        String[] sArr = s.split("");
-        ArrayList<Integer> list = new ArrayList<>();
-
-        for(int i=0; i<sArr.length; i++) {
-            list.add(Integer.parseInt(sArr[i]));
-            System.out.println(list.get(i));
+            System.out.println();
         }
 
-        int min = Collections.min(list);
-        System.out.println("min : " + min);
-        int max = Collections.max(list);
-        System.out.println("max : " + max);
+        System.out.println();
+        System.out.println("===============역직각삼각형");
+        System.out.println();
 
-        int maxNum = Integer.parseInt(s.replace(Integer.toString(min), Integer.toString(max)));
-        System.out.println("maxNum : " + maxNum);
-        int minNum = Integer.parseInt(s.replace(Integer.toString(max), Integer.toString(min)));
-        System.out.println("minNum : " + minNum);
 
-        System.out.println(maxNum - minNum);
+        for (int i = n; i > 0; i--) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+        System.out.println("=============== 피라미드");
+        System.out.println();
+
+        for(int i=0; i<n; i++) {
+            for(int j=1; j<n-i; j++) {
+                System.out.print(" ");
+            }
+            for(int k=0; k<i*2+1; k++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+        System.out.println("===============달팽이찍기");
+        System.out.println();
 
     }
 }
