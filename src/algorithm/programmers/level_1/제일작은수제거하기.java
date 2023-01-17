@@ -1,6 +1,6 @@
 package algorithm.programmers.level_1;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 
 
 /*
@@ -23,20 +23,28 @@ import java.util.Arrays;
 // 아직 미해결
 public class 제일작은수제거하기 {
 
-    public static void main(String[] args) {
+    public int[] solution(int[] arr) {
 
-        int[] arr = {4, 3, 2, 1};
         int[] answer = new int[arr.length - 1];
-
-        Arrays.sort(arr);
-        // 1,2,3,4
-
-        int i;
-        for (i = 0; i < answer.length; i++) {
-
-            answer[i] = arr[i + 1];
-
-            System.out.println(answer[i]);
+        ArrayList<Integer> list = new ArrayList<>();
+        int min = arr[0];
+        for (int num : arr) {
+            if (num < min) {
+                min = num;
+            }
+            list.add(num);
         }
+        list.remove((Integer) min);
+
+        if (list.isEmpty()) {
+            answer = new int[]{-1};
+            return answer;
+        } else {
+            for (int i = 0; i < answer.length; i++) {
+                answer[i] = list.get(i);
+            }
+        }
+
+        return answer;
     }
 }
