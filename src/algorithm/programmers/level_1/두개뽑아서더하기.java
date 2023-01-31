@@ -60,9 +60,8 @@ public class 두개뽑아서더하기 {
         int[] answer = new int[set.size()];
 
         int i = 0;
-        Iterator<Integer> iter = set.iterator();
-        while(iter.hasNext()) {
-            answer[i] = iter.next();
+        for (Integer integer : set) {
+            answer[i] = integer;
             i++;
         }
 
