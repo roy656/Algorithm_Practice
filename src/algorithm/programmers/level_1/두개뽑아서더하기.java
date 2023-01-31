@@ -1,11 +1,7 @@
 package algorithm.programmers.level_1;
 
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-import java.util.TreeSet;
-
+import java.util.*;
 
 /*
 
@@ -51,23 +47,23 @@ public class 두개뽑아서더하기 {
 
     public int[] solution(int[] numbers) {
 
-        // TreeSet 을 이용하면 나중에 따로 sort 를 안해도 된다 !
         Set<Integer> set = new TreeSet<>();
 
         for (int i = 0; i < numbers.length; i++) {
             for (int j = 0; j < numbers.length; j++) {
-                if(j != i) {
+                if (j != i) {
                     set.add(numbers[i] + numbers[j]);
                 }
             }
         }
 
-        List<Integer> list = new ArrayList<>(set);
+        int[] answer = new int[set.size()];
 
-        int[] answer = new int[list.size()];
-
-        for(int i=0; i<list.size(); i++) {
-            answer[i] = list.get(i);
+        int i = 0;
+        Iterator<Integer> iter = set.iterator();
+        while(iter.hasNext()) {
+            answer[i] = iter.next();
+            i++;
         }
 
         return answer;
